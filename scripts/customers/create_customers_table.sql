@@ -17,7 +17,7 @@ CREATE TABLE monday_coffee.customers (
     customer_id			INT PRIMARY KEY,	
 	customer_name		VARCHAR(50),	
 	city_id				INT,
-	CONSTRAINT fk_city FOREIGN KEY (city_id) REFERENCES city(city_id)
+	CONSTRAINT fk_city FOREIGN KEY (city_id) REFERENCES monday_coffee.city(city_id)
 );
 
 
